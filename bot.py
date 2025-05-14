@@ -80,4 +80,4 @@ async def handle_contact(update: Update, context: ContextTypes.DEFAULT_TYPE):
             await update.message.reply_text("❌ Ваш номер не найден в списке сотрудников.")
             try:
                 await context.bot.ban_chat_member(chat_id=GROUP_ID, user_id=user.id)
-                await update.message.reply_text("Вы были удалены из группы
+                await update.message.reply_text("Вы были удалены из группы")
